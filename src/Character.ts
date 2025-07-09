@@ -1,4 +1,4 @@
-class Character {
+export default class Character {
 
     //Inicialização do objeto.
     constructor(
@@ -7,18 +7,41 @@ class Character {
         public life: number, 
         public attack: number,
         public defense: number
-    ) {
-        this.name = name;
-        this.energy = energy;
-        this.life = life;
-        this.attack = attack;
-        this.defense = defense;
+    ) { }
+
+    // Toda vez que pensar em ler dados da classe - use parâmentros.
+    // Toda vez que pensar em imprimir dados da classe - use retorn.
+
+    trainingDefense(): void {
+        this.defense += Math.random() * 5;
+        this.energy -= Math.random() * 10;
+        if(this.energy < 0) {
+            console.log("Você morreu!");
+            return;
+        } else {
+            if(this.defense > 100) this.defense = 0;
+        }
+    }
+
+    trainingAttack(): void {
+        this.attack += Math.random() * 2;
+        this.energy += Math.random() * 10;
+        
+        if(this.energy < 0) {
+            console.log("Você morreu!") 
+            return;
+        } else {
+            if(this.defense > 100) this.defense = 0;
+        }
+    }
+
+    showStatus(): void /*Não tem retorno*/ {
+        console.log("Guerreiro");
+        console.log(`Nome: ${this.name}`);
+        console.log(`Energia: ${this.energy}`);
+        console.log(`Ataque: ${this.attack}`);
+        console.log(`Defesa: ${this.defense}`);
     }
 
 }
 
-const character1: Character = new Character("Ermeson", 100, 200, 50, 50);
-
-const character2: Character = new Character("Miguel", 50, 50, 50, 50);
-
-console.log(`Personagem 1: ${character1.name} | Personagem 2: ${character2.name}`);
