@@ -10,7 +10,7 @@ export default class Character {
     ) { }
 
     // Toda vez que pensar em ler dados da classe - use parâmentros.
-    // Toda vez que pensar em imprimir dados da classe - use retorn.
+    // Toda vez que pensar em imprimir dados da classe - use return.
 
     trainingDefense(): void {
         this.defense += Math.random() * 5;
