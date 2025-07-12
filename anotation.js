@@ -86,7 +86,10 @@
                     ! 💡Regras e Boas Práticas
                         1. Usar get e set mantém o princípio do encapsulamento.
                         2. Nomeie a propriedade privada com um prefixo como _ para evitar conflito com o nome do getter/setter.
-                        3. Eles são usados como propriedades, não como funções
+                        3. Eles são usados como propriedades, não como funções.
+
+        ? Herança 
+            -> Herança é um dos pilares da POO. Ela permite que uma classe (filha) herde características (atributos e métodos) de outra classe (pai). Isso evita repetição de código e promove reutilização e organização.
 
 
 

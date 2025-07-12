@@ -1,12 +1,3 @@
-import Character from "./Character.js";
-const character1 = new Character("Ermeson", 100, 200, 50, 50);
-const character2 = new Character("Rebeca", 50, 50, 50, 50);
-const character3 = new Character("Miguel", 300, 400, 90, 40);
-console.log(`Personagem 1: ${character1.name} | Personagem 2: ${character2.name} | Personagem 2: ${character3.name}`);
-console.log(character1.showStatus());
-console.log("--------------------------------");
-console.log(character3.showStatus());
-console.log("--------------------------------");
-character1.trainingAttack();
-console.log(character3.showStatus());
-console.log("--------------------------------");
+import Warrior from "./Warrior/Warrior.js";
+const characterWarrior = new Warrior("Ermeson", 100, 100, 100, 100, 100, 10);
+console.log(characterWarrior);
