@@ -91,6 +91,9 @@
         ? Herança 
             -> Herança é um dos pilares da POO. Ela permite que uma classe (filha) herde características (atributos e métodos) de outra classe (pai). Isso evita repetição de código e promove reutilização e organização.
 
+        ? Classes Abstratas
+            -> Uma classe abstrata é uma **classe base que não pode ser instanciada diretamente. Ela serve como modelo para outras classes.
+
 
 
         * Obs: 

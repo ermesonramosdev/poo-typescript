@@ -9,6 +9,11 @@ export default class Character {
         this._attack = _attack;
         this._defense = _defense;
         this._armam = _armam;
+        this._energy = Util.randomizar(100, 1000);
+        this._lifeMaximum = Util.randomizar(100, 1000);
+        this._lifeCurrent = Util.randomizar(100, this._lifeMaximum);
+        this._attack = Util.randomizar(100, 1000);
+        this._defense = Util.randomizar(100, 1000);
         this._armam = Util.randomizar(100, 1000);
     }
 }
